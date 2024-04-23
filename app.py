@@ -1,6 +1,5 @@
 #Importing necessary libraries
 import os 
-import pysqlite3
 import sys
 import streamlit as st
 from PyPDF2 import PdfReader
