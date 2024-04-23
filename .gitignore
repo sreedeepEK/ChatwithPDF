@@ -1,0 +1,22 @@
+# Environment variables
+.env
+
+# Large language model (LLM) files 
+models/*
+
+# Temporary or cache files
+*.cache*
+__pycache__
+
+# Streamlit development files
+st.session_state.json
+
+# IDE or editor-specific files
+# Adjust based on your IDE/editor (e.g., .idea for IntelliJ IDEA)
+.idea/
+
+# System or version control files
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
