@@ -3,10 +3,10 @@ import os
 import streamlit as st
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
+from langchain_chroma import Chroma
 from langchain_community.llms import GooglePalm
 from langchain.text_splitter import CharacterTextSplitter
 from sentence_transformers import SentenceTransformer
-from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.chains.question_answering import load_qa_chain
@@ -41,7 +41,7 @@ def main():
 
     # create embeddings
     embeddings = HuggingFaceEmbeddings(model_name='paraphrase-MiniLM-L6-v2')
-    knowledge_base = FAISS.from_texts(chunks, embeddings)
+    knowledge_base = Chroma.from_texts(chunks, embeddings)
 
     # show user input
     user_question = st.text_input("Ask a question about your PDF:")
