@@ -18,7 +18,7 @@ def main():
   google_api_key = os.environ.get("GOOGLE_API_KEY")
   
   st.set_page_config(page_title="Chat with PDF",page_icon=':books:')
-  st.header("Master Your PDFs📑")
+  st.header("Chat with PDFs📑")
 
   # upload file
   pdf = st.file_uploader("Please upload your file here.", type="pdf")
