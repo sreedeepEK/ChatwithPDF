@@ -1,10 +1,9 @@
 #Importing necessary libraries
 import os 
-import sys
 import streamlit as st
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
-from langchain_community.vectorstores import FAISS 
+from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.llms import GooglePalm
 from langchain.text_splitter import CharacterTextSplitter
 from sentence_transformers import SentenceTransformer
