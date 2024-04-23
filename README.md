@@ -1,4 +1,4 @@
-# ChatwithPDF
+## ChatwithyourPDF
 This repository provides a user-friendly Streamlit application that allows you to interact with your PDFs in a conversational manner. Simply upload a PDF document, ask a question about its content, and the app will retrieve relevant passages and generate a response using Google's large language models (LLMs).
 
 Key Features:
