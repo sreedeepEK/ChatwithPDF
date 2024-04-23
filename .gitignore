@@ -11,11 +11,10 @@ __pycache__
 # Streamlit development files
 st.session_state.json
 
-# IDE or editor-specific files
-# Adjust based on your IDE/editor (e.g., .idea for IntelliJ IDEA)
+# IDE 
 .idea/
 
-# System or version control files
+version control files
 Thumbs.db
 .DS_Store
 *.swp
